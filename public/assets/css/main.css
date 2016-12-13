@@ -24,6 +24,8 @@
 
 	body {
 		line-height: 1;
+
+}
 	}
 
 	ol, ul {
@@ -747,7 +749,7 @@
 /* Basic */
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/back.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -775,6 +777,7 @@
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		color: #363636;
+
 	}
 
 	blockquote {
@@ -954,8 +957,8 @@
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
-		color: #ffffff;
+		background-color: #f9dbdb;
+		color: #000;
 		border: 0;
 		cursor: pointer;
 		outline: 0;
@@ -970,7 +973,8 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #fff;
+			border: 1px solid #f9dbdb;
 		}
 
 		input[type="button"]:active,
@@ -1098,41 +1102,6 @@
 			z-index: 1;
 		}
 
-/* Footer */
-
-	#footer {
-		color: #ccc;
-		color: rgba(255, 255, 255, 0.45);
-	}
-
-		#footer a {
-			color: #ddd;
-			color: rgba(255, 255, 255, 0.65);
-			-moz-transition: color .25s ease-in-out;
-			-webkit-transition: color .25s ease-in-out;
-			-ms-transition: color .25s ease-in-out;
-			transition: color .25s ease-in-out;
-		}
-
-			#footer a:hover {
-				color: white;
-			}
-
-		#footer .copyright li {
-			display: inline-block;
-		}
-
-			#footer .copyright li:before {
-				display: inline;
-				content: '\2022';
-				opacity: 0.5;
-				padding: 0 0.75em 0 0.75em;
-			}
-
-			#footer .copyright li:first-child:before {
-				display: none;
-			}
-
 /* Desktop */
 
 	@media screen and (min-width: 737px) {
@@ -1226,6 +1195,7 @@
 				width: 45em;
 				margin: 0 auto;
 				opacity: 0.00001;
+
 			}
 
 				#wrapper.tall {
@@ -1238,6 +1208,7 @@
 				text-align: center;
 				height: 4.25em;
 				cursor: default;
+
 			}
 
 				#nav a {
@@ -1262,7 +1233,7 @@
 						left: 50%;
 						bottom: -0.75em;
 						margin-left: -0.5em;
-						border-bottom: solid 0em #ffffff;
+						border-bottom: solid 0em rgba(255, 255, 255, .2);
 						border-left: solid 0.5em transparent;
 						border-right: solid 0.5em transparent;
 						-moz-transition: border-bottom-width .25s ease-in-out;
@@ -1274,8 +1245,8 @@
 					#nav a span {
 						display: block;
 						position: absolute;
-						background: #222222;
-						color: #ffffff;
+						background-color: rgba(255, 255, 255, .2);
+						color: #f9dbdb;
 						top: -2.75em;
 						font-size: 0.3em;
 						height: 2.25em;
@@ -1297,7 +1268,7 @@
 							bottom: -0.4em;
 							left: 50%;
 							margin-left: -0.6em;
-							border-top: solid 0.6em #222222;
+							border-top: solid 0.6em #fff;
 							border-left: solid 0.6em transparent;
 							border-right: solid 0.6em transparent;
 						}
@@ -1322,8 +1293,9 @@
 
 			#main {
 				width: 45em;
-				background: #ffffff;
-				box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+				background-color: rgba(255, 255, 255, .2);
+				font-family: "Mplus 1p";
+
 			}
 
 			.panel {
@@ -1332,6 +1304,8 @@
 				top: 0;
 				left: 0;
 				width: 45em;
+				background: #000;
+
 			}
 
 		/* Me */
@@ -1364,8 +1338,7 @@
 						margin-top: -1.375em;
 						width: 2.75em;
 						height: 2.75em;
-						background: #000;
-						background: rgba(0, 0, 0, 0.75);
+						background: #f2e3de;
 						color: #ffffff;
 						text-align: center;
 						line-height: 2.75em;
@@ -1394,12 +1367,14 @@
 					}
 
 				#me header {
+					text-align: center;
 					position: absolute;
 					left: 0;
 					top: 0;
 					width: 100%;
 					height: 100%;
 					margin-left: 2.5em;
+
 				}
 
 					#me header > h1 {
@@ -1417,16 +1392,6 @@
 						letter-spacing: -0.015em;
 						margin-top: 0;
 					}
-
-		/* Footer */
-
-			#footer {
-				text-align: center;
-				padding: 2em 0 0 0;
-				font-size: 0.75em;
-			}
-
-	}
 
 /* Mobile */
 
@@ -1529,8 +1494,9 @@
 			.panel {
 				padding: 15px 15px 15px 15px;
 				margin: 0 0 7px 0;
-				background: #ffffff;
-				box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+				background-color: transparent;
+				background-color: rgba(255, 255, 255, .2);
+
 			}
 
 				.panel header {
@@ -1564,21 +1530,3 @@
 				#me header > p {
 					font-size: 1.25em;
 				}
-
-		/* Footer */
-
-			#footer {
-				text-align: center;
-				padding: 2em 0 0 0;
-				font-size: 0.85em;
-			}
-
-				#footer .copyright li {
-					display: block;
-				}
-
-					#footer .copyright li:before {
-						display: none;
-					}
-
-	}

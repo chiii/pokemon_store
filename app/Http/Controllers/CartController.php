@@ -23,14 +23,14 @@ class CartController extends Controller
 
         $this->cart->inCart($id, $num);
 
-        return redirect('/');
+        return redirect('/#contact');
     }
 
     public function delete()
     {
         $this->cart->deleteCart();
 
-        return redirect('/');
+        return redirect('/#contact');
     }
 
 

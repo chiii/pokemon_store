@@ -32,22 +32,15 @@
         <!-- Contact -->
         <article id="contact" class="panel">
             <header>
-                <h2>購入完了</h2>
+                <h2>Thank you for yourpurchase!</h2>
             </header>
             <div>
-                ありがとうございました
-                <a href="/">トップページに戻る</a>
+              メールを送信しましたので、確認お願いします。<br>
+                <a href="/">→とっぷ</a>
             </div>
         </article>
 
 
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-        <ul class="copyright">
-            <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
     </div>
 
 </div>
