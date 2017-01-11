@@ -19,6 +19,6 @@ Route::post('/cart/delete', 'CartController@delete');
 
 Route::post('/address', 'BuyController@address');
 
-Route::post('/done', 'Buycontroller@done');
+Route::post('/done', 'BuyController@done');
 
 Auth::routes();
